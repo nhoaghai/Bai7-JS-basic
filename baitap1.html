@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Bài 1:</h2><br>
+    <script>
+        let inputPhysic = Number(prompt('Enter your Physical score'));
+        let inputChemistry = parseInt(prompt('Enter your Chemistry score'));
+        let inputBiological = +prompt('Enter your Biological score');
+
+
+        let Average = (inputPhysic + inputBiological + inputBiological) / 3
+        document.write('Average =' + Average);
+    </script><br>
+
+    <h2>Bài 2:</h2><br>
+    <script>
+        let inputCdeg = +prompt('Enter C degree');
+
+        let Fdeg = (inputCdeg / 5) * 9 + 32;
+        document.write('F degree =' + Fdeg)
+    </script><br>
+    <h2>Bài 3:</h2><br>
+    <script>
+        let inputR = +prompt('Enter r');
+        let areaCircle = inputR ** 2 *3.14;
+
+        document.write('area of the Circle is ' + areaCircle);
+    </script><br>
+    <h2>Bài 4:</h2><br>
+    <script>
+        let inputr = +prompt('Enter r');
+        let perimeterCircle = 2*inputr*3.14;
+
+        document.write('perimeter of the Circle is ' + perimeterCircle);
+    </script><br>
+    
+</body>
+
+</html>
