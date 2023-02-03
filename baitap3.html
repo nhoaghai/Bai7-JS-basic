@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input type="text" class="numA">
+    <input type="text" class="numB"> <br>
+    <button type="button" onclick="add();">Addition(+)</button>
+    <button type="button" onclick="minus();">subtraction(-)</button>
+    <button type="button" onclick="multiple();">Multiplication(x)</button>
+    <button type="button" onclick="div();">division(/)</button>
+
+    <script>
+        function add(){
+            let valueA = parseInt(document.querySelector('.numA').value)
+            let valueB = parseInt(document.querySelector('.numB').value)
+            let result = valueA + valueB
+            console.log(result);
+        }
+        function minus(){
+            let valueA = parseInt(document.querySelector('.numA').value)
+            let valueB = parseInt(document.querySelector('.numB').value)
+            let result = valueA - valueB
+            console.log(result);
+        }
+        function multiple(){
+            let valueA = parseInt(document.querySelector('.numA').value)
+            let valueB = parseInt(document.querySelector('.numB').value)
+            let result = valueA * valueB
+            console.log(result);
+        }
+        function div(){
+            let valueA = parseInt(document.querySelector('.numA').value)
+            let valueB = parseInt(document.querySelector('.numB').value)
+            let result = valueA / valueB
+            console.log(result);
+        }
+
+    </script>
+</body>
+</html>
