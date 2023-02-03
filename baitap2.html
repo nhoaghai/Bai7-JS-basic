@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div style="display: inline-block;" class="amount">
+        
+            <label>Amount</label>
+            <input type="text" id="input">
+    </div>
+    <div style="display: inline-block;" class="From">
+        <label>From Currency</label>
+        <select name="from" id="from">
+            <option value="0.000039">VietNam</option>
+            <option value="0.92">USD</option>
+            <option value="1">Euro</option>
+        </select>
+    </div>
+    <div style="display: inline-block;" class="To">
+        <label>To Currency</label>
+        <select name="to" id="to">
+            <option value="1.09">USD</option>
+            <option value="0.000039">VietNam</option>
+            <option value="1">Euro</option>
+        </select>
+    </div>
+    <div style="display: inline-block;" class="convert">
+        <button style="background-color: purple; color: white;" type="button" onclick="convert();">Convert</button>
+    </div>
+
+    <script>
+        function convert() {
+            let result = document.querySelector('#from').value * 
+            document.querySelector('#to').value * 
+            document.querySelector('#input').value;
+            console.log(result);
+        }
+    </script>
+</body>
+
+</html>
